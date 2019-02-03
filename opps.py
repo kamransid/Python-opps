@@ -33,20 +33,38 @@ class Bird:
         print('Swim fast')
 
 class Penguin(Bird):
+    __bajar = 'mehnat'
     def __init__(self):
         super().__init__()
         print('Penguin is ready')
     def whoisThis(self):
+        self.aalu = 'bhalu'
         print('Penguin')
     def run(self):
         print('Run Faster')
 
 p = Penguin()
+# p.whoisThis()
+# p.swim()
+# p.run()
+
+#print(p.aalu)#AttributeError: 'Penguin' object has no attribute 'aalu'
+
 p.whoisThis()
-p.swim()
-p.run()
+#print(Penguin.__bajar)#AttributeError: type object 'Penguin' has no a
+print(p.aalu)#bhalu
+#print(p.__class__.aalu)#AttributeError: type object 'Penguin' has no attribute 'aalu'
 
+a = 2
+b=4
+print(a)
+print(b)
 
+def foo():
+    'Hai n a'
+    print('wahhh')
+    'hua'
 
+print(foo.__doc__)
 
 # t = Bird()
